@@ -1,0 +1,132 @@
+
+:root {
+  --ubuntu-orange: #dd4814;
+  --ubuntu-aubergine: #772953;
+  --ubuntu-cool-grey: #333333;
+  --ubuntu-warm-grey: #aea79f;
+  --ubuntu-white: #ffffff;
+  --ubuntu-semi-transparent-white: rgba(255, 255, 255, 0.15);
+  --ubuntu-black: #000000;
+  --ubuntu-font: 'Ubuntu', sans-serif;
+  --ubuntu-code-font: 'Ubuntu Mono', monospace;
+}
+
+.reveal-viewport {
+  background-image: url('./ubuntu.png');
+  background-size: cover;
+}
+
+code {
+  font-family: var(--ubuntu-code-font);
+}
+
+p {
+  max-width: 40rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.1rem;
+}
+
+.reveal {
+  font-family: var(--ubuntu-font);
+  color: var(--ubuntu-white);
+  font-size: 1.5rem;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  line-height: 2.25rem;
+}
+
+.reveal .slides>section.drop {
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 100%;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  font-weight: 400;
+  color: var(--ubuntu-white);
+  margin-bottom: .95rem;
+}
+
+.reveal a {
+  color: var(--ubuntu-orange);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.reveal a:hover {
+  color: var(--ubuntu-aubergine);
+}
+
+.reveal ::selection {
+  color: var(--ubuntu-white);
+  background: var(--ubuntu-black);
+}
+
+.reveal ::-moz-selection {
+  color: var(--ubuntu-white);
+  background: var(--ubuntu-black);
+}
+
+.reveal .controls {
+  color: var(--ubuntu-aubergine) !important;
+}
+
+.reveal .progress {
+  background: var(--ubuntu-warm-grey);
+  color: var(--ubuntu-orange);
+}
+
+.reveal .code-wrapper {
+  white-space: normal;
+  background-color: var(--ubuntu-semi-transparent-white);
+  color: var(--ubuntu-white);
+}
+
+@media print {
+  .backgrounds {
+    background-color: var(--ubuntu-white);
+  }
+}
+
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal .hljs {
+  min-height: 50%;
+  background-color: var(--ubuntu-semi-transparent-white);
+  color: var(--ubuntu-white);
+}
+
+.reveal blockquote {
+  background: var(--ubuntu-semi-transparent-white);
+  padding: 0 2rem;
+  color: var(--ubuntu-white);
+}
+
+
+.reveal .r-frame {
+  border: 4px solid var(--ubuntu-aubergine);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.footnotes {
+  font-size: 8px;
+  color: var(--ubuntu-aubergine);
+}
+
+.footnotes>ol>li::marker {
+  color: var(--ubuntu-orange);
+  content: counter(list-item) ": ";
+}
